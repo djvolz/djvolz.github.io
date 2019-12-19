@@ -149,7 +149,7 @@ function updateCalendarDataWithDecision (decision, object, eventIcon, calendarDa
 		var calendarObject = {
 			"id": dateCol,
 			"title": object.get('name'),
-			"url": 	'http://files.parsetfss.com/d531c601-ccbe-4b51-b369-7e192864f0a6/tfss-5cd118e6-eaf7-402a-803e-894151548988-hip_abduction.png',
+			"url": 	'https://files.parsetfss.com/d531c601-ccbe-4b51-b369-7e192864f0a6/tfss-5cd118e6-eaf7-402a-803e-894151548988-hip_abduction.png',
 			"class": eventIcon,
 			"start": dateCol,
 			"end":   dateCol + timeDelta
