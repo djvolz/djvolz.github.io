@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 	jQuery(function($) {
-	    $('#renan').mouseover(function() {
+	    $('#kentaro').mouseover(function() {
 
 	    	var safeColors = ['00','33','66','99','cc','ff'];
 			var rand = function() {
