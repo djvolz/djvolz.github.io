@@ -1365,7 +1365,7 @@
 								).textContent =
 									null === (e = window.wordle) || void 0 === e
 										? void 0
-										: e.hash),
+										: e.hash + "%69"),
 								(this.shadowRoot.querySelector(
 									"#puzzle-number"
 								).textContent = "#".concat(
