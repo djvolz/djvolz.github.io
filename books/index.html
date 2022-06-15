@@ -57,7 +57,7 @@
         </div>
         <div class="col-md-2">
             <div class="form-group">
-                <label><input type="checkbox" name="checkbox" id="show_images" checked>Show Images</label>
+                <label><input type="checkbox" name="checkbox" id="show_images">Show Images</label>
             </div>
         </div>
         <div class="col-md-2 align-text-right text-right">
@@ -197,7 +197,7 @@
         $('#show_images').change(function () {
             showImages($(this).prop('checked'));
         });
-        showImages(true);      // display
+        showImages(false);      // display
         $('#filter').keyup(filter);
     });
 
