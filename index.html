@@ -1,290 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dan Volz">
-    <meta name="author" content="djvolz">
-
-    <title>Dan Volz</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-    <!-- Custom Fonts -->
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dan Volz - Portfolio">
+    <meta name="author" content="Dan Volz">
+    
+    <title>Dan Volz | Portfolio</title>
+    <!-- Fonts: Outfit (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link rel="stylesheet" href="css/modern.css">
 </head>
-
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Dan Volz</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#resume">resume</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#page-top" class="logo">Dan Volz</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#adventures">Adventures</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="daniel_volz_resume.pdf" target="_blank" class="btn-sm">Resume</a></li>
+            </ul>
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <!-- <h1>Dan Volz</h1>
-                <hr>
-                <p>Welcome</p>
-                <a href="#resume" class="btn btn-primary btn-xl page-scroll">Find Out More</a> -->
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Hi, I'm <span class="text-gradient">Dan Volz</span></h1>
+    
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="daniel_volz_resume.pdf" target="_blank" class="btn btn-outline">Detail Resume</a>
             </div>
         </div>
     </header>
 
-    <section class="bg-primary" id="resume">
+    <!-- About Section -->
+    <section id="about" class="section-padding">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Looking for my Resume?</h2>
-                    <hr class="light">
-                    <p class="text-faded">You came to the right place!</p>
-                    <a href="daniel_volz_resume.pdf" class="btn btn-default btn-xl">View</a>
+            <div class="text-center" style="text-align: center; margin-bottom: 3rem;">
+                <h2 class="section-heading">About Me</h2>
+                <p class="text-secondary">A little bit about my journey.</p>
+                </div>
+            <div class="about-grid">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <span class="feature-icon">🏔️</span>
+                    <h3>Hometown</h3>
+                    <p>Boulder, Colorado</p>
+                    </div>
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <span class="feature-icon">🎓</span>
+                    <h3>Education</h3>
+                    <p>Rice University</p>
+                    <p style="font-size: 0.85rem; opacity: 0.8;">Electrical & Computer Engineering</p>
+                    </div>
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <span class="feature-icon">💼</span>
+                    <h3>Work</h3>
+                    <p>Oracle</p>
+                    <p style="font-size: 0.85rem; opacity: 0.8;">Oracle Autonomous Database</p>
+                    </div>
+                <!-- Card 4 -->
+                <div class="feature-card">
+                    <span class="feature-icon">🚀</span>
+                    <h3>Fun Fact</h3>
+                    <p>I've experienced two zero-gravity flights!</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about">
+    <!-- Adventures Section -->
+    <section id="adventures" class="section-padding" style="background: rgba(255,255,255,0.02);">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About Me</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-home wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Hometown</h3>
-                        <p class="text-muted">Boulder</p>
-                        <p class="text-muted">Colorado</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-graduation-cap wow bounceIn text-primary"></i>
-                        <h3>Education</h3>
-                        <p class="text-muted">Rice University</p>
-                        <p class="text-muted">Electrical and Computer Engineering</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-briefcase wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Work</h3>
-                        <p class="text-muted">Oracle</p>
-                        <!-- <p class="text-muted">Seattle, WA</p> -->
-                        <p class="text-muted">Autonomous Database Cloud</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-space-shuttle wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Something Interesting</h3>
-                        <p class="text-muted">I've been lucky enough to experience two zero-gravity flights!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="no-padding" id="portfolio">
-        <div class="col-lg-4 col-sm-6">
-            <a href="//www.rebelputter.com/" class="portfolio-box">
-                <img src="img/portfolio/rebel_putter_logo.png" class="img-responsive" alt="">
-                <div class="portfolio-box-caption">
-                    <div class="portfolio-box-caption-content">
-                        <div class="project-category text-faded">
-                            Golf Target Calculator
-                        </div>
-                        <div class="project-name">
-                            Rebel Putter
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="container-fluid">
-            <div class="row no-gutter">
-            <div class="col-lg-4 col-sm-6">
-                <a href="//github.com/djvolz/rehabme" class="portfolio-box">
-                    <img src="img/portfolio/rehabme_icon.png" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Mobile and Cloud Platform
-                            </div>
-                            <div class="project-name">
-                                RehabMe
-                            </div>
-                        </div>
+            <h2 class="section-heading" style="margin-bottom: 2rem;">Adventures</h2>
+    
+            <div class="portfolio-grid">
+                <!-- 1. Lake Clark (Local Page) -->
+                <a href="lake-clark-national-park-telaquana-twin/" class="portfolio-item">
+                    <img src="img/adventures/9567129276.jpg" alt="Lake Clark National Park" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="project-category">Backpacking</div>
+                        <div class="project-title">Telaquana & Twin Lakes</div>
                     </div>
                 </a>
-            </div>
-
-              <div class="col-lg-4 col-sm-6">
-                <a href="../paintr" class="portfolio-box">
-                    <img src="img/portfolio/paintr_logo.png" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Photo Processing App
-                            </div>
-                            <div class="project-name">
-                                Paintr
-                            </div>
-                        </div>
+                
+                <!-- 2. Organ Pipe Cactus -->
+                <a href="https://www.strava.com/activities/16606138309" target="_blank" class="portfolio-item">
+                    <img src="img/adventures/16606138309.jpg" alt="Organ Pipe Cactus" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="project-category">Gravel Ride</div>
+                        <div class="project-title">Organ Pipe Cactus Monument</div>
                     </div>
                 </a>
-            </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="//news.rice.edu/2013/07/29/owls-ride-in-zero-gravity/" class="portfolio-box">
-                        <img src="img/portfolio/nasa_student_launch_initiative.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Microgravity Project
-                                </div>
-                                <div class="project-name">
-                                    NASA
-                                </div>
-                            </div>
-                        </div>
+                
+                <!-- 3. Ptarmigan Traverse -->
+                <a href="https://www.strava.com/activities/15258301318" target="_blank" class="portfolio-item">
+                    <img src="img/adventures/15258301318.jpg" alt="Ptarmigan Traverse" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="project-category">Mountaineering</div>
+                        <div class="project-title">Ptarmigan Traverse</div>
+                    </div>
+                </a>
+<!-- 3. Lone Pine Peak -->
+<a href="https://www.strava.com/activities/12244307447" target="_blank" class="portfolio-item">
+    <img src="img/adventures/12244307447.jpg" alt="Lone Pine Peak" class="portfolio-img">
+    <div class="portfolio-overlay">
+        <div class="project-category">Climbing</div>
+        <div class="project-title">Lone Pine Peak (North Ridge)</div>
+                    </div>
+                </a>
+<!-- 4. Sahale-Boston Col -->
+<a href="https://www.strava.com/activities/9186166408" target="_blank" class="portfolio-item">
+    <img src="img/adventures/9186166408.jpg" alt="Sahale-Boston Col" class="portfolio-img">
+    <div class="portfolio-overlay">
+        <div class="project-category">Climbing</div>
+        <div class="project-title">Sahale-Boston Col</div>
+                    </div>
+                </a>
+
+                <!-- 5. Tioga Road -->
+                <a href="https://www.strava.com/activities/11616277168" target="_blank" class="portfolio-item">
+                    <img src="img/adventures/11616277168.jpg" alt="Tioga Road" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="project-category">Cycling</div>
+                        <div class="project-title">Tioga Road - Yosemite</div>
+                    </div>
+                </a>
+<!-- 6. Dirty STP -->
+<a href="https://www.strava.com/activities/5930984540" target="_blank" class="portfolio-item">
+    <img src="img/adventures/5930984540.jpg" alt="Dirty STP" class="portfolio-img">
+    <div class="portfolio-overlay">
+        <div class="project-category">Gravel Cycling</div>
+        <div class="project-title">Dirty STP</div>
+    </div>
+</a>
+<!-- 7. Passport 2 Pain -->
+<a href="https://www.strava.com/activities/9074015464" target="_blank" class="portfolio-item">
+    <img src="img/adventures/9074015464.jpg" alt="Passport 2 Pain" class="portfolio-img">
+    <div class="portfolio-overlay">
+        <div class="project-category">Cycling</div>
+        <div class="project-title">Passport 2 Pain</div>
+    </div>
+</a>
+<!-- 8. Snoqualmie Hike-A-Bike -->
+<a href="https://www.strava.com/activities/9800399551" target="_blank" class="portfolio-item">
+    <img src="img/adventures/9800399551.jpg" alt="Snoqualmie Pass" class="portfolio-img">
+    <div class="portfolio-overlay">
+        <div class="project-category">Gravel Adventure</div>
+        <div class="project-title">Snoqualmie Hike-A-Bike</div>
+                    </div>
+                </a>
+                
+                <!-- 9. Sunrise Road Rainier -->
+                <a href="https://www.strava.com/activities/7375497084" target="_blank" class="portfolio-item">
+                    <img src="img/adventures/7375497084.jpg" alt="Sunrise Road" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="project-category">Cycling</div>
+                        <div class="project-title">Sunrise Road - Rainier</div>
+                    </div>
+                </a>
+                
+                <!-- 10. Morning Gravel -->
+                <a href="https://www.strava.com/activities/7645830060" target="_blank" class="portfolio-item">
+                    <img src="img/adventures/7645830060.jpg" alt="Gravel Ride" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="project-category">Gravel Cycling</div>
+                        <div class="project-title">Morning Afternoon Evening</div>
+                    </div>
+                </a>
+                <!-- Strava Profile Card -->
+                <a href="https://www.strava.com/athletes/26851026" target="_blank" class="portfolio-item" style="background: #fc4c02;">
+                    <div
+                        style="display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-size: 5rem;">
+                        <i class="fab fa-strava"></i>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="project-category">Profile</div>
+                        <div class="project-title">Follow on Strava</div>
+                    </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="//www.techradar.com/news/world-of-tech/all-you-need-to-know-about-automata-micron-s-revolutionary-processor-1237982" class="portfolio-box">
-                        <img src="img/portfolio/automata.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Automata Processor
-                                </div>
-                                <div class="project-name">
-                                    Micron
-                                </div>
-                            </div>
-                        </div>
-                    </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="//cnx.org/contents/cf56bf55-73ac-4707-b4d0-c063183231a5@1.3:1/Project-Summary" class="portfolio-box">
-                        <img src="img/portfolio/lena.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Computer Vision
-                                </div>
-                                <div class="project-name">
-                                    Smile Detection
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+
     </section>
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Want to see my other cool projects? </h2>
-                <i class="fa fa-github fa-5x wow bounceIn" data-wow-delay=".1s"></i>
-                <p><a href="//www.github.com/djvolz">GitHub</a></p>
-            </div>
-        </div>
-    </aside>
-
-    <section id="contact">
+    <!-- Recent Activity Section (Dynamic) -->
+    <section id="recent-activity" class="section-padding">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <!-- <p>Got a question for me? That's great!</p> -->
-                    <p>Send me a message or find me on LinkedIn and I will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:contact@danvolz.com">contact@danvolz.com</a></p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-linkedin-square fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="//www.linkedin.com/in/djvolz">LinkedIn</a></p>
+            <h2 class="section-heading" style="margin-bottom: 2rem;">Recent Activity</h2>
+            <div id="activity-list" class="portfolio-grid">
+                <!-- Content loaded via JS -->
+                <div style="grid-column: 1/-1; text-align: center; color: #666;">
+                    Loading recent Strava activities...
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding"
+        style="background: linear-gradient(to top, rgba(59, 130, 246, 0.05), transparent);">
+        <div class="container contact-container">
+            <h2 class="section-heading">Let's Connect</h2>
+    
+            <div class="contact-links">
+                <a href="mailto:contact@danvolz.com" class="contact-icon" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="//www.linkedin.com/in/djvolz" class="contact-icon" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="//www.github.com/djvolz" class="contact-icon" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div style="margin-top: 3rem;">
+                <a href="daniel_volz_resume.pdf" class="btn btn-primary">Download Resume</a>
+            </div>
+            </div>
+            </section>
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dan Volz.</p>
+        </div>
+    </footer>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
-
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
 </body>
-
 </html>

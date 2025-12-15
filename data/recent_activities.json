@@ -1,0 +1,38 @@
+[
+  {
+    "id": 11616277168,
+    "name": "Tioga Road - Yosemite National Park",
+    "type": "Ride",
+    "distance": "42.5",
+    "date": "10/12/2024",
+    "icon": "fa-bicycle",
+    "link": "https://www.strava.com/activities/11616277168"
+  },
+  {
+    "id": 12244307447,
+    "name": "Lone Pine Peak (North Ridge)",
+    "type": "RockClimbing",
+    "distance": "12.0",
+    "date": "09/15/2024",
+    "icon": "fa-mountain",
+    "link": "https://www.strava.com/activities/12244307447"
+  },
+  {
+    "id": 9800399551,
+    "name": "Snoqualmie Pass Hike-A-Bike",
+    "type": "Ride",
+    "distance": "35.2",
+    "date": "08/20/2024",
+    "icon": "fa-bicycle",
+    "link": "https://www.strava.com/activities/9800399551"
+  },
+  {
+    "id": 9186166408,
+    "name": "Sahale-Boston Col",
+    "type": "RockClimbing",
+    "distance": "8.5",
+    "date": "07/04/2024",
+    "icon": "fa-mountain",
+    "link": "https://www.strava.com/activities/9186166408"
+  }
+]
