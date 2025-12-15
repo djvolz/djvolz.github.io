@@ -114,4 +114,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
     }
+
+    // Modal Interaction
+    const modal = document.getElementById('zero-g-modal');
+    const btn = document.getElementById('fun-fact-btn');
+    const close = document.getElementById('close-modal');
+
+    if (modal && btn && close) {
+        btn.addEventListener('click', () => {
+            modal.classList.add('active');
+        });
+
+        close.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                modal.classList.remove('active');
+            }
+        });
+    }
 });

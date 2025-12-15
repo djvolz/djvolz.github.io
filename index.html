@@ -45,6 +45,20 @@
         </div>
     </header>
 
+    <!-- Zero Gravity Modal -->
+    <div id="zero-g-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <a href="zero-gravity/" class="modal-link-wrapper"
+                style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
+                <img src="img/bg-nasa.jpg" alt="Dan Floating in Zero Gravity" class="modal-image">
+                <p class="modal-caption">Me floating in zero-gravity during a NASA flight campaign!</p>
+                <span style="margin-top: 0.5rem; color: var(--accent-primary); font-size: 0.9rem; font-weight: 600;">Read
+                    the full story →</span>
+            </a>
+        </div>
+    </div>
+
     <!-- About Section -->
     <section id="about" class="section-padding">
         <div class="container">
@@ -57,7 +71,7 @@
                 <div class="feature-card">
                     <span class="feature-icon">🏔️</span>
                     <h3>Hometown</h3>
-                    <p>Boulder, Colorado</p>
+                    <p>Unincorporated Boulder County, Colorado</p>
                     </div>
                 <!-- Card 2 -->
                 <div class="feature-card">
@@ -74,10 +88,12 @@
                     <p style="font-size: 0.85rem; opacity: 0.8;">Oracle Autonomous Database</p>
                     </div>
                 <!-- Card 4 -->
-                <div class="feature-card">
+                <!-- Card 4 -->
+                <div id="fun-fact-btn" class="feature-card" style="cursor: pointer;">
                     <span class="feature-icon">🚀</span>
                     <h3>Fun Fact</h3>
                     <p>I've experienced two zero-gravity flights!</p>
+                    <p style="font-size: 0.75rem; color: var(--accent-secondary); margin-top: 5px;">(Click to view photos)</p>
                 </div>
             </div>
         </div>
