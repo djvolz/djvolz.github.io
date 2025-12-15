@@ -418,3 +418,11 @@ footer {
 .close-btn:hover {
   transform: scale(1.1);
 }
+.fade-transition {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}

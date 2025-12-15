@@ -151,4 +151,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupModal(modal, btn, close);
     setupModal(htModal, htBtn, htClose);
+
+    // Dynamic Name Toggling
+    const firstNameEl = document.getElementById('first-name');
+    if (firstNameEl) {
+        firstNameEl.classList.add('fade-transition');
+        const names = ["Dan", "Danny"];
+        let index = 0;
+
+        setInterval(() => {
+            firstNameEl.classList.add('fade-out');
+            setTimeout(() => {
+                index = (index + 1) % names.length;
+                firstNameEl.textContent = names[index];
+                firstNameEl.classList.remove('fade-out');
+            }, 500); // Wait for fade transition (0.5s)
+        }, 4000); // 4 seconds visible
+    }
 });
