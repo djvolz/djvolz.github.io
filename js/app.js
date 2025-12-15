@@ -115,31 +115,40 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 
-    // Modal Interaction
+    // Zero-G Modal Interaction
     const modal = document.getElementById('zero-g-modal');
     const btn = document.getElementById('fun-fact-btn');
     const close = document.getElementById('close-modal');
 
-    if (modal && btn && close) {
-        btn.addEventListener('click', () => {
-            modal.classList.add('active');
-        });
+    // Hometown Modal Interaction
+    const htModal = document.getElementById('hometown-modal');
+    const htBtn = document.getElementById('hometown-btn');
+    const htClose = document.getElementById('close-hometown-modal');
 
-        close.addEventListener('click', () => {
-            modal.classList.remove('active');
-        });
+    function setupModal(modalEl, btnEl, closeEl) {
+        if (modalEl && btnEl && closeEl) {
+            btnEl.addEventListener('click', () => {
+                modalEl.classList.add('active');
+            });
 
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.classList.remove('active');
-            }
-        });
+            closeEl.addEventListener('click', () => {
+                modalEl.classList.remove('active');
+            });
 
-        // Close on Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && modal.classList.contains('active')) {
-                modal.classList.remove('active');
-            }
-        });
+            modalEl.addEventListener('click', (e) => {
+                if (e.target === modalEl) {
+                    modalEl.classList.remove('active');
+                }
+            });
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modalEl.classList.contains('active')) {
+                    modalEl.classList.remove('active');
+                }
+            });
+        }
     }
+
+    setupModal(modal, btn, close);
+    setupModal(htModal, htBtn, htClose);
 });

@@ -59,6 +59,16 @@
         </div>
     </div>
 
+    <!-- Hometown Modal -->
+    <div id="hometown-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="close-hometown-modal" class="close-btn">&times;</button>
+            <img src="img/unincorporated_boulder.jpg" alt="Unincorporated Boulder County" class="modal-image">
+            <p class="modal-caption" style="font-style: italic; opacity: 0.8;">(AI generated representation of
+                Unincorporated Boulder County)</p>
+        </div>
+    </div>
+
     <!-- About Section -->
     <section id="about" class="section-padding">
         <div class="container">
@@ -68,25 +78,25 @@
                 </div>
             <div class="about-grid">
                 <!-- Card 1 -->
-                <div class="feature-card">
+                <!-- Card 1 -->
+                <div id="hometown-btn" class="feature-card" style="cursor: pointer;">
                     <span class="feature-icon">🏔️</span>
                     <h3>Hometown</h3>
                     <p>Unincorporated Boulder County, Colorado</p>
-                    </div>
+                    <p style="font-size: 0.75rem; color: var(--accent-secondary); margin-top: 5px;">(Click to view)</p>
+                </div>
                 <!-- Card 2 -->
                 <div class="feature-card">
                     <span class="feature-icon">🎓</span>
                     <h3>Education</h3>
-                    <p>Rice University</p>
-                    <p style="font-size: 0.85rem; opacity: 0.8;">Electrical & Computer Engineering</p>
-                    </div>
+                    <p><a href="https://www.rice.edu/" target="_blank" style="color: inherit; text-decoration: underline; text-decoration-color: var(--accent-secondary);"></a>Rice University</a></p>
+                </div>
                 <!-- Card 3 -->
                 <div class="feature-card">
                     <span class="feature-icon">💼</span>
                     <h3>Work</h3>
-                    <p>Oracle</p>
-                    <p style="font-size: 0.85rem; opacity: 0.8;">Oracle Autonomous Database</p>
-                    </div>
+                    <p><a href="https://www.oracle.com/" target="_blank" style="color: inherit; text-decoration: underline; text-decoration-color: var(--accent-secondary);">Oracle</a></p>
+                </div>
                 <!-- Card 4 -->
                 <!-- Card 4 -->
                 <div id="fun-fact-btn" class="feature-card" style="cursor: pointer;">
