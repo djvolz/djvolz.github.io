@@ -85,6 +85,11 @@ async function main() {
         const accessToken = await getAccessToken();
         const activities = await getRecentActivities(accessToken);
 
+        if (!Array.isArray(activities)) {
+            console.error('API Error Response:', JSON.stringify(activities, null, 2));
+            throw new Error('Failed to fetch activities: Response is not an array.');
+        }
+
         const simplified = activities.map(act => ({
             id: act.id,
             name: act.name,
